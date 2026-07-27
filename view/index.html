@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Armería Block Spin — Catálogo Oficial</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="wrap">
+      <div class="brand">
+        <!-- Retícula/Mira Táctica -->
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="#FF3535" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+          <circle cx="12" cy="12" r="2" fill="#FF3535"/>
+        </svg>
+        <div class="brand-text">ARMERÍA <span>BLOCK SPIN</span></div>
+      </div>
+      <a href="#discord-link" class="nav-cta" id="navDiscordBtn">Unirse al Discord</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-stripes"></div>
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Mercado Urbano · Comunidad Block Spin</div>
+      <h1>Armas, skins y<br>equipamiento para la <em>calle</em>.</h1>
+      <p>Mirá el catálogo, confirmá el stock y cerrá la compra directo en nuestro Discord. Entrega inmediata en el server.</p>
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn-primary">Ver inventario</a>
+        <a href="#discord-link" class="btn-ghost" id="heroDiscordBtn">Consultar por Discord</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="hazard-divider"></div>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="how">
+    <div class="wrap how-grid">
+      <div class="how-step">
+        <div class="how-num">01</div>
+        <div><h3>Elegí tu arma o skin</h3><p>Revisá precios y disponibilidad en tiempo real.</p></div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">02</div>
+        <div><h3>Tocá "Consultar"</h3><p>Se copiará el pedido en tu portapapeles automáticamente.</p></div>
+      </div>
+      <div class="how-step">
+        <div class="how-num">03</div>
+        <div><h3>Trato por Discord</h3><p>Coordinamos la entrega y pago directo en el servidor.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section class="catalog wrap" id="catalogo">
+    <div class="catalog-head">
+      <h2>Catálogo de Armas<span>Items listos para entrega inmediata</span></h2>
+    </div>
+
+    <div class="tabs" id="tabs"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-row">
+        <div class="brand-text" style="font-size:15px;">ARMERÍA <span style="color:var(--spark);">BLOCK SPIN</span></div>
+        <a href="#discord-link" class="btn-ghost" id="footerDiscordBtn">Unirse al Discord</a>
+      </div>
+      <p class="footer-note">
+        Catálogo no oficial administrado por jugadores. Sin afiliación directa con Roblox Corporation ni los creadores de Block Spin. Precios finales coordinados vía Discord.
+      </p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>

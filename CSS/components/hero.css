@@ -1,0 +1,27 @@
+.hero 
+{ position: relative; padding: 80px 0 60px; border-bottom: 1px solid var(--line); overflow: hidden; }
+
+.hero-stripes {
+  position: absolute; inset: 0; opacity: 0.3;
+  background: repeating-linear-gradient(-45deg, transparent 0 20px, rgba(255, 53, 53, 0.05) 20px 22px);
+}
+.hero-inner { position: relative; z-index: 1; max-width: 680px; }
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  color: var(--spark); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px;
+}
+.hero h1 { font-family: 'Oswald', sans-serif; font-size: clamp(38px, 5.5vw, 64px); line-height: 1; margin-bottom: 20px; text-transform: uppercase; }
+.hero h1 em { color: var(--spark); font-style: normal; }
+.hero p { font-size: 16px; color: var(--mist); margin-bottom: 28px; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--spark); color: #FFF;
+  font-family: 'Oswald', sans-serif; text-transform: uppercase; font-weight: 600;
+  padding: 12px 24px; clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+}
+.btn-ghost {
+  border: 1px solid var(--line); color: var(--text);
+  font-family: 'Oswald', sans-serif; text-transform: uppercase; font-weight: 600; padding: 12px 24px;
+}
+.btn-ghost:hover { border-color: var(--spark); color: var(--spark); }
+.hazard-divider { height: 6px; background: repeating-linear-gradient(-45deg, var(--spark) 0 10px, #000 10px 20px); }
